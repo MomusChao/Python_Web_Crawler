@@ -1,13 +1,13 @@
 
 # coding: utf-8
 
-# In[2]:
+# In[1]:
 
 #import module
 import requests
 
 
-# In[3]:
+# In[2]:
 
 #define function
 def get_content(url):
@@ -15,9 +15,9 @@ def get_content(url):
     return resp.text
 
 
-# In[ ]:
+# In[3]:
 
-if _name_ == '_main_':
+if __name__ == '__main__':
     url="http://www.phei.com.cn/"
     content=get_content(url)
     print("Top 50 Char:",content[0:50])
